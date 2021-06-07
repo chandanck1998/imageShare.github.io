@@ -1,0 +1,11 @@
+/* font frameworks start */
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&family=Mate+SC&display=swap');
+
+.brandFont{
+    font-family: 'Mate SC', serif;
+}
+
+.headFont{
+    font-family: 'Cuprum', sans-serif;
+}
+/* font frameworks end */

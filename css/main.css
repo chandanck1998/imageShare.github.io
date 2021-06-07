@@ -1,0 +1,306 @@
+input{
+    outline: none !important;
+}
+/* header code start */
+.header{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px gray;
+}
+
+.header a{
+    color: black;
+    text-decoration: none;
+}
+
+.brandName{
+    font-size: 1.5rem;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header ul li{
+    margin: 0px 5px;
+}
+
+.header ul li a{
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header ul li a:hover{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.header ul li button{
+    border: none;
+    background-color: inherit;
+    color: black;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    padding:4px 10px;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+.header ul li button:hover{
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+/* header code end */
+
+/* footer code start */
+.footer{
+    background-color: rgb(39, 39, 39);
+    border-radius: 0;
+}
+
+.footer .contactFormCon .formCon{
+    margin-bottom: 10px;
+}
+.contactFormCon .formCon input::placeholder,.contactFormCon .formCon textarea::placeholder{
+    color: white;
+    font-family: "Cuprum",serif;
+}
+.contactFormCon .formCon input,.contactFormCon .formCon textarea{
+    outline: none !important;
+    width: 90%;
+    transition: 0.5s;
+    background-color: inherit;
+    border:2px solid white;
+    font-family:"Cuprum" serif;
+    color: white;
+}
+
+.contactFormCon .formCon input:focus,.contactFormCon .formCon textarea:focus{
+    width: 100%;
+    border-color: rgb(0, 255, 179);
+    box-shadow:0px 2px 8px rgb(0, 255, 179);
+}
+
+.contactFormCon button{
+    border:2px solid white;
+    margin-right: 5%;
+    color: white;
+}
+.contactFormCon button:hover{
+    background-color: rgb(0, 255, 179);
+    border-color: rgb(0, 255, 179);
+}
+
+.footer p{
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.followCon{
+    display: flex;
+}
+
+.followCon a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.followCon a:nth-child(1)
+{
+    color: rgb(0, 76, 255);
+    margin-right: 20px;
+}
+
+.followCon a:nth-child(2)
+{
+    color: rgb(162, 0, 255);
+    margin-right: 20px;
+}
+
+.followCon a:nth-child(3)
+{
+    color: rgb(0, 162, 255);
+}
+
+/* footer code end */
+
+/* content code start */
+.content{
+    width: 100%;
+    background-color: rgb(180, 180, 180);
+}
+
+.content .tagBar{
+    width: 100%;
+    background-color: white;
+    border:1px solid white;
+}
+
+.tagBar ul{
+    list-style: none;
+    display: flex;
+    overflow: auto;
+}
+
+.tagBar ul li{
+    margin:0 5px;
+}
+
+.content .tagBar ul li button{
+    border: none;
+    background-color: inherit;
+    color: black;
+    font-family: "Cuprum",serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    outline: none;
+    padding: 2px 10px;
+}
+.content .tagBar ul li button:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.3s;
+}
+
+/* page start */
+
+.content .page{
+    width: 100%;
+}
+.content .page .imageCon{
+    width: 100%;
+    min-height: 500px;
+    padding: 10px;
+}
+
+.content .page .imageCon .imgBox{
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+}
+.content .page .imageCon .imgBox .image img{
+    width: 100%;
+}
+/* content code end */
+
+/* upload modal code start */
+
+.uplodaCon input,.uplodaCon select{
+    border: 1px solid black;
+}
+
+.uplodaCon .imagePreview{
+    width: 100%;
+}
+.uplodaCon .imagePreview img{
+    width: 100%;
+}
+/* upload modal code end */
+
+/* login modal code start */
+.tabBtns{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.tabBtns button{
+    background-color: inherit;
+    border: 1px solid gray;
+    border-bottom: none;
+    padding: 2px 10px;
+    border-radius: 10px 10px 0px 0px;
+    font-family:"Cuprum",serif;
+    outline: none;
+}
+.tabBtns button.active{
+    background-color: #505050;
+    color: white;
+}
+/* login modal code end */
+
+/* upload loader */
+.linear-activity {
+    overflow: hidden;
+    width: 50%;
+    height: 4px;
+    background-color: #B3E5FC;
+    margin: 20px auto;
+}
+
+.determinate {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    -webkit-transition: width 500ms ease-out 1s;
+       -moz-transition: width 500ms ease-out 1s;
+         -o-transition: width 500ms ease-out 1s;
+            transition: width 500ms ease-out 1s;
+    background-color: #03A9F4;
+}
+
+.indeterminate {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.indeterminate:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: #03A9F4;
+    animation: indeterminate_first 1.5s infinite ease-out;
+}
+
+.indeterminate:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: #4FC3F7;
+    animation: indeterminate_second 1.5s infinite ease-in;
+}
+
+@keyframes indeterminate_first {
+    0% {
+        left: -100%;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 10%;
+    }
+}
+
+@keyframes indeterminate_second {
+    0% {
+        left: -150%;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 10%;
+    }
+}
